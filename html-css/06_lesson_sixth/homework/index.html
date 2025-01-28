@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form">
+            <div class="conteiner">
+                <form type="form">
+                    <h2>Регестрація</h2>
+                    <br>
+                    <div type="form_item">
+                        <label for="inp01">Повне ім'я</label>
+                        <input id="inp01" type="text" placeholder="Дарина" required>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="inp02">Email</label>
+                        <input id="inp02" type="email" placeholder="example@fg.co">
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="inp03">Пароль</label>
+                        <input id="inp03" type="password" required>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="inp05">Пароль ще раз</label>
+                        <input id="inp05" type="password" required>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="">Стать</label>
+                        <input type="radio" name="Стать" value="жіноча">
+                        <span>жіноча</span> 
+                        <input type="radio" name="Стать" value="чоловіча">
+                        <span>чоловіча</span>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="">Вік</label>
+                        <input type="numder" id="age" name="Вік" min="0" max="120" value="0">
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="">Курс</label>
+                        <select >
+                            <option value="--">--</option>
+                            <option value="FE">Front End</option>
+                            <option value="BE">Back End</option>
+                            <option value="PM">Project Managment</option>
+                            <option value="QAM">QA Manual</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <label for="">Повна адреса</label>
+                        <textarea name="adress" id="adress">Країна, регіон/селище, місто</textarea>
+                    </div>
+                    <br>
+                    <div type="form_item">
+                        <input id="agree" type="checkbox">
+                        <label for="agree">Я погоджуюсь з обробкою персонльних даних</label> 
+                    </div>
+                    <br>
+                    <button type="submit">Зареєструватися</button> / <button type="reset">Очитстити форму</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
