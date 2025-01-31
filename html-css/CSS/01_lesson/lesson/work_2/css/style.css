@@ -1,0 +1,30 @@
+.h1title {
+    color: #500CFD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.h2title {
+    color: #FF001A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.h3title {
+   color: #0CFD18;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19.36px;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+
+}
