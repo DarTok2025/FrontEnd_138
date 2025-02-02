@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Псевдоелементи*/
+.title::before {
+    content:"😀" ;
+}
+
+.title::after {
+    content: "😀";
+}
+
+.title__2 ::after {
+    display: block;
+    
+}
+
+.btn {
+    width: 160px;
+    height: 42px;
+    background-color: #06B25F;
+    border-radius: 6px;
+    border: none;
+    color:#FFFFFF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+    padding: 0 24px;
+}
+
+.btn:hover {
+    background-color: #0B9854;
+    opacity: 18%;
+}
+
+.btn:active {
+    background: #0F874D;
+    opacity: 30%;
+}
+
+.btn__1 {
+    width: 160px;
+    height: 42px;
+    border-radius: 6px;
+    border: none;
+    color:#FFFFFF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+    padding: 0 24px;
+    border: 2px solid #06B25F;
+    background-color: transparent;
+    color: #06B25F;
+}
+
+.btn__1:hover {
+    background-color: #0B9854;
+    opacity: 18%;
+}
+
+.btn__1:active {
+    background: #0F874D;
+    opacity: 30%;
+}
