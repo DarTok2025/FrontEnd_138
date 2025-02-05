@@ -1,3 +1,11 @@
+/*Змінні*/
+:root {
+    --color-grey: #F6F6F6;
+    --color-black: #070707;
+
+    --header-line-color: #828282;
+}
+
 /*Reset CSS Start*/
 * {
     padding: 0%;
@@ -11,6 +19,7 @@ img {
 
 .boddy {
     font-family: Open Sans, sans-serif;
+    color: var(--color-black);
 }
 
 .container {
@@ -21,7 +30,7 @@ img {
 
 /*Header Start*/
 .header__nav {
-    border: 1px solid #828282;
+    border: 1px solid var(--header-line-color);
 }
 
 .header__list {
@@ -40,18 +49,20 @@ img {
     letter-spacing: 0.02px;
     text-align: left;
     text-decoration: none;
-    color: #828282;
+    color: var(--header-line-color);
 }
 /*Header End*/
 
 /*About Start*/
+.about {
+    background-color: var(--color-grey); 
+}
 .conteiner__about {
     max-width: 970px;
     margin: 0 auto;
 }
 
 .title {
-    font-family: Open Sans;
     font-size: 48px;
     font-weight: 700px;
     line-height: 65px;
@@ -60,7 +71,6 @@ img {
 }
 
 .sub-title {
-    font-family: Open Sans;
     font-size: 34px;
     font-weight: 700px;
     line-height: 46px;
@@ -70,7 +80,6 @@ img {
 }
 
 .text1__about {
-    font-family: Open Sans;
     font-size: 18px;
     font-weight: 400px;
     line-height: 25px;
@@ -78,7 +87,6 @@ img {
 }
 
 .text2__about {
-    font-family: Open Sans;
     font-size: 18px;
     font-weight: 400px;
     line-height: 25px;
@@ -88,7 +96,6 @@ img {
 }
 
 .text3__about {
-    font-family: Open Sans;
     font-size: 18px;
     font-weight: 400px;
     line-height: 25px;
@@ -96,6 +103,55 @@ img {
     padding-bottom: 100px ;
 }
 /*About End*/
+
+/*Skills Start*/
+.conteiner__skills {
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.skills__sub-title {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.programs__skills {
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 67px;
+}
+
+.img__skils {
+    width: 80px;    
+    height: 140px;
+    padding-top: 50px;
+    padding-bottom: 10px;   
+}
+
+.text__skills {
+    font-weight: 700px;
+    size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--header-line-color);
+    padding-bottom: 60px;
+}
+
+.img__stb {
+    width: 26px;
+    height: 26px; 
+}
+
+
+
+
+
+
+/*Skills End*/
 
 
 
