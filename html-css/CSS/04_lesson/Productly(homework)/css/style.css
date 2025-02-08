@@ -258,6 +258,13 @@ sub.title {
 
 /* Footer section */
 
+.footer__hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-border);
+    margin-bottom:120px;
+}
+
 .footer__nav {
     display: flex;
     justify-content: space-between;
