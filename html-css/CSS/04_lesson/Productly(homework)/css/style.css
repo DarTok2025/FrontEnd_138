@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --main-font: Montserrat, sans-serif;
+    /* Colors */
+    --color-white: #FFFFFF;
+    --color-orange: #FF9900;
+    --color-title: #2F281E;
+    --color-text: #544837;
+    --color-border: #BCD0E5;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--color-text);
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    color: var(--color-title);
+}
+
+sub.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    color: var(--color-title);
+}
+
+.h3-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--color-title);
+}
+
+
+
+.conainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 4px;
+    border-color: var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-title);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 26px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 44px;
+    cursor: pointer; 
+}
+
+.input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border: 1px var(--color-border) solid;
+    border-radius: 4px;
+    color: var(--color-border);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+/* Header section */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 120px;
+}
+
+.nav__list-item {
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.header__nav-link {
+   text-decoration: none;
+   color: var(--color-title);
+}
+
+.header__nav-link:hover {
+    color: var(--color-orange);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button__sing-in:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button__sing-up {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: none;
+}
+
+.button__sing-up:hover {
+    background-color: var(--color-white);
+    color: var(--color-title);
+    border: var(--color-border) solid;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* Header section End */
+
+/* Hero section */
+.hero {
+    padding-top: 70px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.hero__content {
+    max-width: 500px;
+    padding-right: 56px;  
+}
+
+.hero__text {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 644px;
+}
+/* Hero section End */
+
+/* Features section */
+
+.features {
+    padding: 100px 0 75px;
+    background-image: url(./../image/bg.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.features__title {
+    margin-bottom: 50px;
+    max-width: 347px;
+    text-align: center;
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__row {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.features__item {
+    max-width: 270px;
+}
+/* Features section End*/
+
+/* Information section */
+.benifits,.product-managers,.marketers {
+    padding: 100px 120px;
+}
+
+.benifits__container,.product-managers__container,.marketers__container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.benifits__content,.marketers__content {
+    max-width: 500px;
+    padding-right: 113px;
+}
+
+.benifits__title,.product-managers__title,.marketers__title {
+    margin-bottom: 20px;
+    margin-top: -45px;
+}
+
+.benifits__text,.product-managers__text,.marketers__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+.benifits__h4,.marketers__h4 {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.img__benifits,.img__marketers {   
+    width: 100%;
+    max-width: 644px;
+}
+
+.product-managers__content {
+    max-width: 500px;
+    padding-left: 125px;
+}
+
+.product-managers__order {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.img__chbox {
+    height: 35px;
+    width: 35px;
+    margin-right: 9px;
+}
+/* Information section End */
+
+/* Footer section */
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 120px;
+} 
+
+.img__footer {
+    /* margin: -50px 0 130px 170px;; */
+}
+
+
+.nav__list {
+    display: inline;
+    margin: 0 130px 0;
+}
+
+.footer__list-item {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.footer__h3 {
+    text-align: left;
+}
+
+.footer__input {
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    gap: 15px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.h3__list {
+    padding-bottom: 30px;
+}
+
+
+
+
+/* Footer section End */
+
