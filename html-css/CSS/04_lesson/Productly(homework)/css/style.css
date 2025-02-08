@@ -268,7 +268,6 @@ sub.title {
 .footer__nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 17px 120px;
 } 
 
