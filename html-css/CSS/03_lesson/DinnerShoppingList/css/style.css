@@ -82,22 +82,14 @@ font-size: 11px;
 line-height: 13px;
 }
 
-.hero__end {
+.footer {
     text-align: center;
+    background-color: #4A4F56;
+    margin: 45px 0;
 }
 
-.hero__end  {
-margin: 45px 130px;
-background-color: #4A4F56;
-}
-
-.hero__text {
-    font-size: 18px;
-    line-height: 22px;
-    font-family: Roboto;
-    font-weight: 400;
-    letter-spacing: 0%;
-    color: #FF8984;
-    padding: 12px 205px;
-    
+.footer__text {
+   height: 45px;
+   text-align: center;
+   padding: 12px;
 }
