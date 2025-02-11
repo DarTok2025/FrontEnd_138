@@ -4,4 +4,124 @@
     box-sizing: border-box;
 } 
 
+.wrapper {
+    background-color: #3399CC;
+    height: 100vh;
+    border: 25px #2B81AC solid;
+}
 
+
+.container {
+    width: min(90%, 1166px);
+    margin: 0 auto;  
+}
+
+.main-title {
+    font-family: Lucida Sans Unicode;
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+    font-weight: 400;
+    margin: 66px 0 38px;
+}
+
+.forecast-wrap {
+    border: 2px white solid;
+    font-size: 0;
+    margin-bottom: 35px;
+}
+
+.forecast__item {
+    display: inline-block;
+    border: 2px white solid;
+    font-family: Lucida Sans Unicode;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 26px 0 27px;
+}
+
+.forecast__item:hover {
+    opacity: .7;
+}
+
+.city {
+    font-weight: 400;
+}
+
+.tempetature {
+    display: inline-block;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+.blue {
+    background-color: #3399CC;
+}
+
+.aqua {
+    background-color: #33CCCC;
+}
+
+.purple {
+    background-color: #996699;
+}
+.red {
+    background-color: #C24747;
+}
+
+.orange {
+    background-color: #C24747;
+}
+
+.yellow {
+    background-color: #FFCC66;
+}
+
+.light-green{
+    background-color: #99CC99;
+}
+
+.grey {
+    background-color: #99CC99;
+}
+
+.pink {
+    background-color: #CC6699;
+}
+
+.green {
+    background-color: #339966;
+}
+
+.violete {
+    background-color: #666699;
+}
+
+.text {
+    color: white;
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+/* .table__item {
+    display: inline-block;
+    
+    height: 100px;
+    background: red;
+}
+
+.item__title { 
+    width: 50%;
+} */
