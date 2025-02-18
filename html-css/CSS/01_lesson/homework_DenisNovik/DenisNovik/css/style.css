@@ -53,13 +53,14 @@ img {
 }
 /*Header End*/
 
+/* Hero Start */
+
+
+/* Hero End */ 
+
 /*About Start*/
 .about {
     background-color: var(--color-grey); 
-}
-.conteiner__about {
-    max-width: 970px;
-    margin: 0 auto;
 }
 
 .title {
@@ -105,9 +106,7 @@ img {
 /*About End*/
 
 /*Skills Start*/
-.conteiner__skills {
-    max-width: 970px;
-    margin: 0 auto;
+.skills__container {
     text-align: center;
     padding-bottom: 50px;
 }
@@ -145,13 +144,17 @@ img {
     width: 26px;
     height: 26px; 
 }
-
-
-
-
-
-
 /*Skills End*/
+
+/* Portfolio Start */
+.portfolio {
+    background-color: var(--color-grey); 
+}
+
+.portfolio__container {
+    max-width: 970px;
+    margin: 0 auto;
+}
 
 
 
