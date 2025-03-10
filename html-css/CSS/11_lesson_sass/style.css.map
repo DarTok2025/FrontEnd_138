@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["scss/variables/_color-variable.scss","scss/global/main-g.scss","scss/global/buttons.scss","scss/main.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACA;EACA;EACA;;;AAGA;EACI;EACA;;;ACRJ;EACI;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;;;ACCJ;EACI;;AAEA;EACI;;AAGJ;EACI;;AAGJ;EAXJ;IAYQ;;;AAIR;EACI","file":"style.css"}
