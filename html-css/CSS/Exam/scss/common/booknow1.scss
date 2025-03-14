@@ -1,0 +1,47 @@
+.booknow1 {
+  background-image: url(./images/BookNow1Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    padding: 220px 0 120px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    background-color: var(--booknow1-bgcolor);
+    width: 648px;
+    padding: 44px 32px;
+  }
+
+  &__title {
+    padding: 16px 0;
+  }
+
+  &__text {
+    padding-bottom: 24px;
+  }
+}
+
+// Laptop
+@media (max-width: 1205px) {
+  .booknow1__container {
+    padding-left: 32px;
+  }
+}
+
+// Tablet
+@media (max-width: 768px) {
+  .booknow1__container {
+    justify-content: center;
+    padding: 32px;
+  }
+  .booknow1__content {
+    margin: 120px 32px;
+  }
+}
+// Mobile
+@media (max-width: 576px) {
+}

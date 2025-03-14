@@ -1,0 +1,42 @@
+.header {
+  background-image: url(./images/HeaderBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 295px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+    letter-spacing: 5px;
+  }
+}
+
+.search {
+  margin-bottom: 211px;
+}
+
+.scroll-down {
+  margin-bottom: 120px;
+}
+
+// Laptop
+@media (max-width: 1205px) {
+}
+
+// Tablet
+@media (max-width: 768px) {
+}
+
+// Mobile
+@media (max-width: 576px) {
+}

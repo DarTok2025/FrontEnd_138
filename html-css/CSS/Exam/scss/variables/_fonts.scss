@@ -1,0 +1,58 @@
+@use "./media" as *;
+@use "./color";
+
+:root {
+  --button-text: "Aleo", san-serif;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.sub-title {
+  font-family: Aleo;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.mini-title {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 10%;
+  color: var(--text-color);
+}
+
+.main-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.sub-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.nav-bar {
+  &__link {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-family: var(--button-text);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 10%;
+  }
+}

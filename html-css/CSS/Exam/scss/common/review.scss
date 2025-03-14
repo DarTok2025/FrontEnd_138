@@ -1,0 +1,72 @@
+.review {
+  background-image: url(./images/ReviewBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    padding: 120px 0 180px;
+  }
+
+  &__sub-title {
+    padding-bottom: 60px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    letter-spacing: 3px;
+  }
+
+  &__mini-title {
+    padding-bottom: 10px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sam-sumon {
+    background-color: var(--review-samsumon-bgcolor);
+    padding: 54px 60px;
+  }
+
+  &__text::before {
+    content: "❝";
+    color: var(--quote-left-iconcolor);
+    font-size: 30px;
+  }
+}
+
+// Laptop
+@media (max-width: 1205px) {
+  .review__content {
+    padding: 32px;
+  }
+}
+
+// Tablet
+@media (max-width: 768px) {
+  .review__container {
+    padding: 60px 0 120px;
+  }
+  .review__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .review__sub-title {
+    text-align: center;
+    width: auto;
+  }
+}
+
+// Mobile
+@media (max-width: 576px) {
+}

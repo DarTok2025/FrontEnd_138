@@ -1,0 +1,104 @@
+.why {
+  background-image: url(./images/WhyBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    padding-top: 190px;
+    padding-right: 136px;
+  }
+
+  &__title {
+    padding-bottom: 24px;
+  }
+
+  &__text2 {
+    padding-bottom: 32px;
+  }
+
+  &__button {
+    margin-bottom: 80px;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 70px;
+  }
+
+  &__image-item1 {
+    margin-right: 60px;
+    display: block;
+  }
+
+  &__image-item2 {
+    margin-left: 60px;
+    display: block;
+  }
+}
+
+// Laptop
+@media (max-width: 1205px) {
+  .why__container {
+    padding-left: 30px;
+  }
+  .why__content {
+    padding-right: 35px;
+  }
+}
+
+// Tablet
+@media (max-width: 768px) {
+  .why__container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .why__content {
+    padding-top: 32px;
+  }
+  .why__image {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-top: 60px;
+  }
+  .why__image-item1 {
+    margin-right: 12px;
+  }
+  .why__image-item2 {
+    margin-left: 12px;
+  }
+
+  .why__button {
+    display: inline;
+    margin-bottom: 60px;
+  }
+}
+
+// Mobile
+@media (max-width: 576px) {
+  .why__image-item1 {
+    width: 268px;
+    height: 162px;
+    margin-right: 0;
+  }
+
+  .why__image-item2 {
+    width: 268px;
+    height: 162px;
+    margin-left: 0;
+  }
+
+  .why__image {
+    padding-left: 41px;
+  }
+}

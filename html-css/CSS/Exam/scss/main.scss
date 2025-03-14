@@ -1,0 +1,26 @@
+// Variables
+@use "./variables/fonts.scss";
+@use "./variables/color";
+@use "./variables/media" as *;
+
+// Global
+@use "./global/reset.scss";
+@use "./global/global.scss";
+
+// Component
+@use "./component/input.scss";
+@use "./component/button.scss";
+@use "./component/scroll-down.scss";
+@use "./component/burger.scss";
+@use "./component/icon-steps.scss";
+@use "./component/icon-footer.scss";
+
+// Common
+@use "./common/header.scss";
+@use "./common/nav-bar.scss";
+@use "./common/why.scss";
+@use "./common/steps.scss";
+@use "./common/booknow1.scss";
+@use "./common/booknow2.scss";
+@use "./common/review.scss";
+@use "./common/footer.scss";
