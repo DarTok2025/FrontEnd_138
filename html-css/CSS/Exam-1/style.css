@@ -93,7 +93,7 @@ body {
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -366,7 +366,7 @@ button {
   .why__image {
     display: flex;
     flex-direction: row;
-    gap: 0;
+    gap: 15px;
     margin-top: 60px;
   }
   .why__image-item1 {
@@ -382,12 +382,12 @@ button {
 }
 @media (max-width: 576px) {
   .why__image-item1 {
-    width: 268px;
+    width: 200px;
     height: 162px;
     margin-right: 0;
   }
   .why__image-item2 {
-    width: 268px;
+    width: 200px;
     height: 162px;
     margin-left: 0;
   }
