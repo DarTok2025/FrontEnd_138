@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="test">
+      Вивід Гравців
+      <select class="sel">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
+      <button class="btn">Show</button>
+      <button class="res">Reset</button>
+
+      <span>Пошук:</span>
+      <input class="inp2" type="text" placeholder="Name" />
+      <button class="search">Search</button>
+    </div>
+
+    <ul class="out"></ul>
+
+    <script>
+      //1. Зробити кнопку ресет. очищуємо аут
+      //2. Зробити пошук if(inp.value ===)
+      //3. Додати в папку  имж картинки Виводити юзера з аватаркою
+      //та підписати картинки
+
+      function SetName(name) {
+        return `<li>${name}</li>`;
+      }
+      let sel1 = document.querySelector(".sel");
+      let button = document.querySelector(".btn");
+      let out = document.querySelector(".out");
+
+      //------------------1--------2--------3------4---------5
+      //   let users = ['Sasha', 'Sveta', 'Gala', 'Kolya', 'Petya']
+
+      button.onclick = () => {
+        out.innerHTML = "";
+        for (let i = 0; i < +sel1.value; i++) {
+          out.innerHTML += SetName("Dasha");
+          //   out.innerHTML += test(users[1]);
+        }
+      };
+    </script>
+  </body>
+</html>
