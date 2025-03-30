@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="out"></div>
+
+    <script>
+      let find = prompt("name");
+      let users = ["sasha", "dasha", "masha"];
+      let out = document.querySelector(".out");
+
+      for (let i = 0; i < users.length; i++) {
+        console.log(users[i]);
+        if (users[i] === find) {
+          out.innerHTML = `<h2>Hello</h2><p>${users[i]}</p>`;
+        }
+      }
+
+      //Вивчити напам'ять (for - це низькорівнева мова програмування)
+      for (let i = 2; i < 10; i++) {
+        for (let j = 2; j < 10; j++) {
+          console.log(i + "*" + j + "=" + i * j);
+        }
+      }
+
+      //Для мвсивів:
+      // user.map (item => {
+      // console.log(item)})
+
+      //Для статики:
+      //   btn.forEach(item => {
+      //     console.log(item);
+      //   });
+    </script>
+  </body>
+</html>
