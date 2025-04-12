@@ -51,6 +51,28 @@
       function multi(num, num2) {
         out.innerHTML = +num * +num2;
       }
+
+      function year(name, age) {
+        let vozrast = 2025 - age;
+        if (vozrast < 18) {
+          return `${name} mladwe 18`;
+        } else {
+          return `${name}, ${vozrast}`;
+        }
+      }
+
+      let otvet = year("Dasha", 1988);
+      console.log(otvet);
+      console.log(year("Lesha", 2013));
+
+      function min(a, b) {
+        if (a > b) {
+          return b;
+        } else {
+          return a;
+        }
+      }
+      console.log(min(5, 9));
     </script>
   </body>
 </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. Створи функцію, яка буде виводити кількість переданих їй аргументів.
+      function countArguments(...args) {
+        alert(args.length);
+      }
+
+      countArguments(1, 2, 3);
+
+      // 2. Напиши функцію, яка приймає 2 числа і повертає :
+      // -1, якщо перше число менше, ніж друге;
+      // 1 - якщо перше число більше, ніж друге;
+      // 0 - якщо числа рівні.
+      function compareNumbers(a, b) {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+      }
+      // 3. Напиши функцію, яка обчислює факторіал переданого їй числа.
+      function factorial(n) {
+        if (n === 0 || n === 1) return 1;
+        return n * factorial(n - 1);
+      }
+
+      // 4. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
+      //  Наприклад: цифри 1, 4, 9 перетворяться в число 149.
+      function toNumber(num1, num2, num3) {
+        let result = num1 * 100 + num2 * 10 + num3;
+        return result;
+      }
+
+      console.log(toNumber(1, 4, 9));
+
+      // 5. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію
+      // передали 1 параметр, то вона обчислює площу квадрата.
+      function calculateArea(length, width) {
+        let area;
+        if (width === undefined) {
+          area = length * length; // Площа квадрата
+        } else {
+          area = length * width; // Площа прямокутника
+        }
+        return area;
+      }
+
+      console.log(calculateArea(5, 10)); // Виведе: 50 (для прямокутника)
+      console.log(calculateArea(4));
+
+      // 6. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число,
+      // яке дорівнює сумі всіх своїх дільників.
+      function PerfectNum() {
+        let num = parseInt(
+          prompt("Введіть число для перевірки, чи є воно досконалим:")
+        );
+        let sum = 0;
+
+        for (let i = 1; i < num; i++) {
+          if (num % i === 0) {
+            sum += i;
+          }
+        }
+
+        if (sum === num) {
+          alert(`${num} є досконалим числом!`);
+        } else {
+          alert(`${num} не є досконалим числом.`);
+        }
+      }
+
+      PerfectNum();
+
+      // 7. Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки
+      // ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи
+      //  є це число досконалим.
+    </script>
+  </body>
+</html>

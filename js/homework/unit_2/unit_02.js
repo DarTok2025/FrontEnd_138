@@ -1,11 +1,16 @@
 // Task 1.
 // Создайте две переменные a = 7 и b = 9. Выведите в консоль результа умножения a на b.
+// let a = 7;
+// let b = 9;
+// let out2 = document.querySelector(".out-1");
+// out2.innerHTML = a * b;
+// console.log(out2);
 
 // Task 2.
 // Создайте две переменные c = 7 и d = 9. Выведите на страницу в .out-2 результат деления c на d.
-let c = 7;
-let d = 9;
-document.querySelector(".out-2").textContent = c / d;
+// let c = 7;
+// let d = 9;
+// document.querySelector(".out-2").innerHTML = c / d;
 
 // Task 3.
 // Создайте две переменные e = 3 и f = 5. Выведите на страницу  в .out-3 результат сложения e + f.
