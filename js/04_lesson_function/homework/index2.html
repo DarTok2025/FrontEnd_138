@@ -5,46 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .select,
+    .inp {
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .btn-show,
+    .btn-reset,
+    .btn-srch {
+      padding: 6px 12px;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-show:hover,
+    .btn-reset:hover,
+    .btn-srch:hover {
+      background-color: #45a049;
+    }
+
+    .btn-reset {
+      background-color: #f44336;
+    }
+
+    .btn-reset:hover {
+      background-color: #d73225;
+    }
+
+    ul.out {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.out li {
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    ul.out li img {
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 2px solid #ccc;
+    }
+  </style>
+
   <body>
-    <div class="test">
-      Вивід Гравців
-      <select class="sel">
+    <header class="header">
+      <span>Players</span>
+      <select class="select">
         <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>
       </select>
-      <button class="btn">Show</button>
-      <button class="res">Reset</button>
+      <button class="btn-show">Show</button>
+      <button class="btn-reset">Reset</button>
 
-      <span>Пошук:</span>
-      <input class="inp2" type="text" placeholder="Name" />
-      <button class="search">Search</button>
-    </div>
+      <span>Search:</span>
+      <input class="inp" type="text" placeholder="Name" />
+      <button class="btn-srch">Search</button>
+    </header>
 
     <ul class="out"></ul>
 
     <script>
-      //1. Зробити кнопку ресет. очищуємо аут
-      //2. Зробити пошук if(inp.value ===)
-      //3. Додати в папку  имж картинки Виводити юзера з аватаркою
-      //та підписати картинки
+      let select = document.querySelector(".select");
+      let btnShow = document.querySelector(".btn-show");
+      let out = document.querySelector(".out");
+      let btnReset = document.querySelector(".btn-reset");
+      let btnSearch = document.querySelector(".btn-srch");
+      let inp = document.querySelector(".inp");
+
+      let users = [
+        "Sasha",
+        "Sveta",
+        "Gala",
+        "Kolya",
+        "Petya",
+        "Lesha",
+        "Vanya",
+        "Dasha",
+        "Masha",
+        "Lena",
+        "Vita",
+        "Nadya",
+        "Zina",
+        "Olya",
+        "Tanya",
+      ];
 
       function SetName(name) {
-        return `<li>${name}</li>`;
+        return `<li> <img src="./img/${name}.png" alt="${name}" width="200">${name}</li>`;
       }
-      let sel1 = document.querySelector(".sel");
-      let button = document.querySelector(".btn");
-      let out = document.querySelector(".out");
 
-      //------------------1--------2--------3------4---------5
-      //   let users = ['Sasha', 'Sveta', 'Gala', 'Kolya', 'Petya']
-
-      button.onclick = () => {
+      btnShow.onclick = () => {
         out.innerHTML = "";
-        for (let i = 0; i < +sel1.value; i++) {
-          out.innerHTML += SetName("Dasha");
-          //   out.innerHTML += test(users[1]);
+        for (let i = 0; i < +select.value; i++) {
+          out.innerHTML += SetName(users[i]);
         }
+      };
+
+      btnSearch.onclick = () => {
+        out.innerHTML = "";
+        let text = inp.value.toLowerCase();
+        for (let i = 0; i < users.length; i++) {
+          if (users[i].toLowerCase().includes(text)) {
+            out.innerHTML += SetName(users[i]);
+          }
+        }
+      };
+
+      btnReset.onclick = () => {
+        out.innerHTML = "";
+        inp.value = "";
       };
     </script>
   </body>
