@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .out {
+        display: grid;
+        grid-template-columns: repeat(3, 80px);
+        gap: 10px;
+      }
+
+      .item {
+        border: 1px solid;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .item:hover {
+        background-color: aqua;
+      }
+
+      .item:active {
+        background-color: aquamarine;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .active {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="out"></div>
+      <div class="singl-out">
+        <div class="item-out">
+          <h3></h3>
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let out = document.querySelector(".out");
+      let singlOut = document.querySelector(".singl-out");
+
+      let items = [
+        { name: "Sasha", age: 22 },
+        { name: "Sveta", age: 21 },
+        { name: "Kolya", age: 16 },
+        { name: "Alex", age: 23 },
+        { name: "John", age: 34 },
+        { name: "Alla", age: 18 },
+      ];
+
+      items.map((item) => {
+        let user = document.createElement("div");
+        user.classList.add("item");
+
+        let name = document.createElement("h3");
+        name.innerHTML = item.name;
+
+        let age = document.createElement("p");
+        age.innerHTML = `Age: ${item.age}`;
+
+        user.append(name, age);
+        out.append(user);
+
+        user.addEventListener("click", () => {
+          // Знімаємо активний клас з усіх
+          document
+            .querySelectorAll(".item")
+            .forEach((el) => el.classList.remove("active"));
+          user.classList.add("active");
+
+          singlOut.innerHTML = `
+            <div class="item">
+              <img src="./img/${item.name}.png" alt="${item.name}" width="200" />
+              <h3>${item.name}</h3>
+              <h5>Age: ${item.age}</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fuga?</p>
+            </div>
+          `;
+        });
+      });
+    </script>
+
+    <!-- let out = document.querySelector(".out");
+    let singlOut = document.querySelector(".singl-out");
+    
+    let items = [
+      { name: "Sasha", age: 22 },
+      { name: "Sveta", age: 21 },
+      { name: "Kolya", age: 16 },
+      { name: "ALex", age: 23 },
+      { name: "Jon", age: 34 },
+      { name: "Ala", age: 18 },
+    ];
+    
+    // Отримуємо збережені вибори
+    let saved = JSON.parse(localStorage.getItem("selectedPlayers")) || [];
+    
+    // Функція для створення картки в правому блоці
+    function showSinglePlayer(player) {
+      singlOut.innerHTML += `
+        <div class="item">
+          <img src="./img/${player.name}.png" alt="${player.name}" width="100" />
+          <h3>${player.name}</h3>
+          <h5>Age: ${player.age}</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fuga?</p>
+        </div>
+      `;
+    }
+     -->
+    <!-- items.map((item) => {
+      let user = document.createElement("div");
+      user.classList.add("item");
+    
+      let name = document.createElement("h3");
+      name.innerHTML = item.name;
+    
+      let age = document.createElement("p");
+      age.innerHTML = `Age: ${item.age}`;
+    
+      user.append(name, age);
+      out.append(user);
+    
+      // Позначаємо активні, якщо вони збережені
+      if (saved.find((s) => s.name === item.name)) {
+        user.classList.add("active");
+        showSinglePlayer(item);
+      }
+    
+      user.addEventListener("click", () => {
+        // Якщо вже є — не додаємо вдруге
+        if (!saved.find((s) => s.name === item.name)) {
+          saved.push(item);
+          localStorage.setItem("selectedPlayers", JSON.stringify(saved));
+          user.classList.add("active");
+          showSinglePlayer(item);
+        }
+      });
+    }); -->
+  </body>
+</html>

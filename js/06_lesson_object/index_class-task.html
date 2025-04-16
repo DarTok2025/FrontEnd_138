@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Завдання 1 -->
+    <select class="select" name="" id="">
+      <option value="User1">User1</option>
+      <option value="User2">User2</option>
+      <option value="User3">User3</option>
+    </select>
+    <button class="btn">Search</button>
+
+    <!-- Завдання 2 -->
+    <select class="select1" name="" id=""></select>
+    <button class="btn1">Search</button>
+
+    <script>
+      //  <!-- Завдання 1 -->
+      // Зробити масив
+      let arr = ["User1", "User2", "User3"];
+      let select = document.querySelector(".select");
+      let btn = document.querySelector(".btn");
+      // клік по кнопці
+      btn.onclick = () => {
+        //   перебрати масив
+        arr.map((item) => {
+          //   якщо айтем із масиву відповідає значенню вибраному у селекті,
+          if (item === select.value) {
+            //  то в консоль лог виводимо цей айтем
+            console.log(item);
+          }
+        });
+      };
+
+      // <!-- Завдання 2 -->
+
+      let select1 = document.querySelector(".select1");
+      let btn1 = document.querySelector(".btn1");
+      let arr1 = [
+        "User1",
+        "User2",
+        "User3",
+        "User4",
+        "User5",
+        "User6",
+        "User1",
+        "User2",
+        "User3",
+      ];
+
+      // прибирає дублікати в масиві
+      // Створюємо новий масив без дублікатів
+      let newSet = [...new Set(arr1)];
+
+      // Додаємо у select тільки унікальних користувачів
+      //   перебрати масив та вивести у пустий селект всіх користувачівю
+      newSet.map((item) => {
+        // створити опшини в аштіемель
+        select1.innerHTML += `<option value='${item}'>${item}</option>`;
+      });
+
+      btn1.onclick = () => {
+        newSet.map((item) => {
+          if (item === select1.value) {
+            console.log(item);
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

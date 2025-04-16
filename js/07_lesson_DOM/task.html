@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="out"></div>
+    <button class="btn">Add User</button>
+
+    <script>
+      let out = document.querySelector(".out");
+      let btn = document.querySelector(".btn");
+
+      btn.onclick = () => {
+        let name = document.createElement("h2");
+        name.innerHTML = `Sasha`;
+        name.classList.add("title");
+
+        out.append(name);
+      };
+    </script>
+  </body>
+</html>
